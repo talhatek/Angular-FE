@@ -1,0 +1,15 @@
+<table class="table table-hover">
+    <tr class="unselectable">
+        <th>Message</th>
+        <th>Create Date</th>
+        <th> Type of Log</th>
+       
+    </tr>
+    <tbody>
+    <tr *ngFor ="let pd of service.list">
+        <td>{{pd.Message}}</td>
+        <td>{{pd.created_at}}</td>
+        <td>{{pd.Type}}</td>
+    </tr>
+</tbody>
+</table>
